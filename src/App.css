@@ -1,0 +1,8 @@
+ul a.active{
+  text-decoration: underline;
+  color: #632EE3;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
