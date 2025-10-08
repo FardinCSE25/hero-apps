@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import downloadIcon from '../assets/icon-downloads.png';
 import ratingIcon from '../assets/icon-ratings.png';
-import { useLoaderData } from 'react-router';
+import useApps from '../../useApps';
+import { Link } from 'react-router';
 
 const Apps = () => {
-       const allApps = useLoaderData()
+       const {apps} = useApps()
        const [search, setSearch] = useState('')
        const changedSearch = search.trim().toLocaleLowerCase()
-       const searchedApps = changedSearch ? allApps.filter(apps => apps.title.toLocaleLowerCase().includes(changedSearch)) : <div>No App Found</div>
-       console.log(allApps);
+       const searchedApps = changedSearch ? apps.filter(apps => apps.title.toLocaleLowerCase().includes(changedSearch)) : apps
+    //    console.log(allApps);
        
     return (
        <div className='bg-gray-100 inter pb-12'>
@@ -37,8 +38,8 @@ const Apps = () => {
                                // console.log(apps);
                                
                             return (
-                               <div key={apps.id} className='p-4 bg-white rounded-sm'>
-                                   <img className='pb-4 h-60 w-full' src={apps.image} alt="app logo" />
+                               <Link to={`/apps/${apps.id}`} key={apps.id} className='p-4 bg-white rounded-sm'>
+                                   <img className='pb-4 h-60 w-full overflow-hidden rounded-sm' src={apps.image} alt="app logo" />
                                    <h1 className='pb-4'>
                                        {apps.title}
                                    </h1>
@@ -56,7 +57,7 @@ const Apps = () => {
                                            </h1>
                                        </div>
                                    </div>
-                               </div>
+                               </Link>
                             );
                            })
                        }

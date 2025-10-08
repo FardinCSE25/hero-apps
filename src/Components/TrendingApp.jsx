@@ -20,8 +20,8 @@ const TrendingApp = ({trendingApps}) => {
                         // console.log(apps);
                         
                      return (
-                        <div key={apps.id} className='p-4 bg-white rounded-sm'>
-                            <img className='pb-4 h-60 w-full' src={apps.image} alt="app logo" />
+                        <Link to={`/apps/${apps.id}`} key={apps.id} className='p-4 bg-white rounded-sm'>
+                            <img className='pb-4 h-60 w-full overflow-hidden rounded-sm' src={apps.image} alt="app logo" />
                             <h1 className='pb-4'>
                                 {apps.title}
                             </h1>
@@ -39,7 +39,7 @@ const TrendingApp = ({trendingApps}) => {
                                     </h1>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                      );
                     })
                 }

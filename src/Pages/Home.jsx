@@ -2,10 +2,15 @@ import React from 'react';
 import Hero from '../Components/Hero';
 import Banner from '../Components/Banner';
 import TrendingApp from '../Components/TrendingApp';
-import { useLoaderData } from 'react-router';
+import useApps from '../../useApps';
 
 const Home = () => {
-    const trendingApps = useLoaderData()
+    // const allApps = useLoaderData()
+    const {apps} = useApps()
+    // console.log(allAppsData);
+    
+    const trendingApps = apps.slice(0,8)
+
     // console.log(trendingApps);
     
     return (
