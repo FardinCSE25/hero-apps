@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d",
+    "title": "Focusly: Productivity Timer",
+    "companyName": "MindSpark Labs",
+    "id": 1,
+    "description": "Boost your focus using Pomodoro-style sessions with analytics and calming backgrounds.",
+    "size": "48 MB",
+    "reviews": "12.5K",
+    "ratingAvg": 4.6,
+    "downloads": "1.2M",
+    "ratings": [
+      { "name": "1 star", "count": 320 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3100 },
+      { "name": "5 star", "count": 8493 }
+    ]
+  },
+  {
+    "image": "https://image.winudf.com/v2/image1/Y29tLnNuYXBtaXgucGhvdG9lZGl0b3Jfc2NyZWVuXzFfMTY5OTAxMTUzNV8wOTA/screen-1.jpg?fakeurl=1&type=.jpg",
+    "title": "SnapMix: Photo Editor",
+    "companyName": "PixelCraft Studios",
+    "id": 2,
+    "description": "A lightweight photo editor with AI filters, background remover, and instant collage maker.",
+    "size": "95 MB",
+    "reviews": "78.3K",
+    "ratingAvg": 4.3,
+    "downloads": "5.2M",
+    "ratings": [
+      { "name": "1 star", "count": 3120 },
+      { "name": "2 star", "count": 4120 },
+      { "name": "3 star", "count": 9100 },
+      { "name": "4 star", "count": 17100 },
+      { "name": "5 star", "count": 44981 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f",
+    "title": "FitTrack: Health & Steps",
+    "companyName": "ActiveNow",
+    "id": 3,
+    "description": "Track your daily steps, calories, water intake, and sleep patterns effortlessly.",
+    "size": "64 MB",
+    "reviews": "24.8K",
+    "ratingAvg": 4.7,
+    "downloads": "2.6M",
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1700 },
+      { "name": "4 star", "count": 5400 },
+      { "name": "5 star", "count": 16692 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1558655146-d09347e92766",
+    "title": "NoteFlow: Smart Notepad",
+    "companyName": "AlphaByte Tech",
+    "id": 4,
+    "description": "Organize your notes, ideas, and voice memos with cloud sync and AI suggestions.",
+    "size": "40 MB",
+    "reviews": "18.5K",
+    "ratingAvg": 4.5,
+    "downloads": "1.8M",
+    "ratings": [
+      { "name": "1 star", "count": 650 },
+      { "name": "2 star", "count": 820 },
+      { "name": "3 star", "count": 1700 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 10190 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyIPoGHu2LpI5djU0vgEi3sxH4Nf4g7cNrwQ&s",
+    "title": "Soundify: Music Streamer",
+    "companyName": "WaveTech Media",
+    "id": 5,
+    "description": "Stream and download millions of songs ad-free with personalized playlists.",
+    "size": "128 MB",
+    "reviews": "96.5K",
+    "ratingAvg": 4.4,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 7400 },
+      { "name": "2 star", "count": 9200 },
+      { "name": "3 star", "count": 15100 },
+      { "name": "4 star", "count": 26300 },
+      { "name": "5 star", "count": 38542 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1611605698335-8b1569810432",
+    "title": "EduPath: Learn Anything",
+    "companyName": "NextGen Learning",
+    "id": 6,
+    "description": "Interactive video lessons, coding challenges, and quizzes to make learning fun.",
+    "size": "85 MB",
+    "reviews": "45.6K",
+    "ratingAvg": 4.8,
+    "downloads": "3.3M",
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 3400 },
+      { "name": "4 star", "count": 7300 },
+      { "name": "5 star", "count": 32970 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62",
+    "title": "TaskMate: To-Do & Planner",
+    "companyName": "PlanIt Labs",
+    "id": 7,
+    "description": "A simple and intuitive to-do list app with reminders, deadlines, and calendar view.",
+    "size": "52 MB",
+    "reviews": "21.1K",
+    "ratingAvg": 4.2,
+    "downloads": "1.5M",
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1300 },
+      { "name": "3 star", "count": 3100 },
+      { "name": "4 star", "count": 6500 },
+      { "name": "5 star", "count": 9354 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    "title": "DevSync: Code on the Go",
+    "companyName": "Codeverse Inc.",
+    "id": 8,
+    "description": "Write, edit, and deploy code from your phone with Git integration and syntax highlighting.",
+    "size": "110 MB",
+    "reviews": "19.2K",
+    "ratingAvg": 4.9,
+    "downloads": "0.9M",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 230 },
+      { "name": "3 star", "count": 720 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 15134 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://cdn-icons-png.flaticon.com/512/2504/2504929.png",
+    "title": "SnapPic",
+    "companyName": "PixelSoft Ltd.",
+    "description": "Edit and share your photos with professional filters and tools.",
+    "size": "42.3 MB",
+    "reviews": "815K",
+    "ratingAvg": 4.6,
+    "downloads": "5.2M",
+    "ratings": [
+      { "name": "1 star", "count": 420 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2300 },
+      { "name": "4 star", "count": 8200 },
+      { "name": "5 star", "count": 21200 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://cdn-icons-png.flaticon.com/512/5968/5968841.png",
+    "title": "TaskFlow",
+    "companyName": "NextLogic Inc.",
+    "description": "Organize your daily tasks and increase your productivity.",
+    "size": "58.7 MB",
+    "reviews": "674K",
+    "ratingAvg": 4.3,
+    "downloads": "3.9M",
+    "ratings": [
+      { "name": "1 star", "count": 520 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 2100 },
+      { "name": "4 star", "count": 6400 },
+      { "name": "5 star", "count": 17400 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732200.png",
+    "title": "NoteMaster",
+    "companyName": "WriteLab Co.",
+    "description": "Simple and beautiful note-taking app with cloud sync support.",
+    "size": "29.8 MB",
+    "reviews": "511K",
+    "ratingAvg": 4.7,
+    "downloads": "6.1M",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 4800 },
+      { "name": "5 star", "count": 19500 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://cdn-icons-png.flaticon.com/512/906/906343.png",
+    "title": "FitTrack",
+    "companyName": "Healthify Team",
+    "description": "Track your workouts, calories, and fitness goals easily.",
+    "size": "66.2 MB",
+    "reviews": "958K",
+    "ratingAvg": 4.5,
+    "downloads": "8.7M",
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1300 },
+      { "name": "3 star", "count": 3200 },
+      { "name": "4 star", "count": 9900 },
+      { "name": "5 star", "count": 25100 }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://cdn-icons-png.flaticon.com/512/5968/5968872.png",
+    "title": "NewsPulse",
+    "companyName": "DailyStream Media",
+    "description": "Stay updated with the latest world news and live coverage.",
+    "size": "45.1 MB",
+    "reviews": "780K",
+    "ratingAvg": 4.2,
+    "downloads": "4.8M",
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 7900 },
+      { "name": "5 star", "count": 20400 }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://cdn-icons-png.flaticon.com/512/1006/1006771.png",
+    "title": "CookMate",
+    "companyName": "Foodify Labs",
+    "description": "Discover thousands of recipes and cooking tutorials.",
+    "size": "52.4 MB",
+    "reviews": "620K",
+    "ratingAvg": 4.8,
+    "downloads": "7.5M",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 7200 },
+      { "name": "5 star", "count": 25600 }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://play-lh.googleusercontent.com/rJaXm_Owjbz7T52kyrjjeAxLlnCgfQONhKi15Z8ksDz5ZCN24WmzhFfWZcPoSiFs4CCHpEWJ2WBpVI4UTjgYTQ",
+    "title": "LangLearn",
+    "companyName": "GlobalLingua",
+    "description": "Learn new languages interactively with fun lessons and quizzes.",
+    "size": "61.9 MB",
+    "reviews": "1110K",
+    "ratingAvg": 4.6,
+    "downloads": "9.4M",
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2300 },
+      { "name": "4 star", "count": 8400 },
+      { "name": "5 star", "count": 27600 }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://cdn-icons-png.flaticon.com/512/2111/2111646.png",
+    "title": "Musicify",
+    "companyName": "SoundWave Studio",
+    "description": "Stream and download millions of songs anytime, anywhere.",
+    "size": "70.5 MB",
+    "reviews": "2150K",
+    "ratingAvg": 4.9,
+    "downloads": "12.6M",
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 9600 },
+      { "name": "5 star", "count": 33400 }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://cdn-icons-png.flaticon.com/512/5968/5968705.png",
+    "title": "Weatherly",
+    "companyName": "SkyCast Systems",
+    "description": "Accurate weather forecasts, radar, and alerts in real-time.",
+    "size": "38.9 MB",
+    "reviews": "514K",
+    "ratingAvg": 4.3,
+    "downloads": "3.4M",
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 6400 },
+      { "name": "5 star", "count": 17200 }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://cdn-icons-png.flaticon.com/512/906/906334.png",
+    "title": "GameHub",
+    "companyName": "Arcadia Labs",
+    "description": "Discover and play trending games across all genres.",
+    "size": "95.3 MB",
+    "reviews": "1890K",
+    "ratingAvg": 4.7,
+    "downloads": "15.8M",
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1700 },
+      { "name": "3 star", "count": 3400 },
+      { "name": "4 star", "count": 11000 },
+      { "name": "5 star", "count": 38200 }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732221.png",
+    "title": "FinancePro",
+    "companyName": "MoneyWorks",
+    "description": "Manage your expenses, income, and budget effectively.",
+    "size": "41.6 MB",
+    "reviews": "780K",
+    "ratingAvg": 4.4,
+    "downloads": "6.2M",
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2100 },
+      { "name": "4 star", "count": 7700 },
+      { "name": "5 star", "count": 23100 }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://cdn6.aptoide.com/imgs/8/1/1/8118255b996eb7d0a88ebb041cd84da0_icon.png",
+    "title": "MovieBox",
+    "companyName": "CineVerse Studios",
+    "description": "Stream trending movies, TV shows, and series on any device.",
+    "size": "89.1 MB",
+    "reviews": "1950K",
+    "ratingAvg": 4.9,
+    "downloads": "17.5M",
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 1600 },
+      { "name": "3 star", "count": 3700 },
+      { "name": "4 star", "count": 11500 },
+      { "name": "5 star", "count": 40200 }
+    ]
+  }
+]

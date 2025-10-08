@@ -2,11 +2,13 @@ import { createBrowserRouter } from "react-router";
 import Home from "../Pages/Home";
 import Apps from "../Pages/Apps";
 import Layout from "../Layout";
+import Error from "../Pages/Error";
 
 const router = createBrowserRouter([
     {
         path: "/",
         Component: Layout,
+        errorElement: <Error/>,
         children: [
             {
                 index: true,
@@ -14,10 +16,10 @@ const router = createBrowserRouter([
                 loader: () => fetch('/TrendingApps.json'),
             },
               {
-                path: "apps",
+                path: "/apps",
                 Component: Apps,
-            },
-
+                loader: () => fetch('/AllApps.json')
+            }
         ]
     },                           
 

@@ -26,15 +26,15 @@ const TrendingApp = ({trendingApps}) => {
                                 {apps.title}
                             </h1>
                             <div className='flex justify-between items-center pb-4'>
-                                <div className='bg-gray-100 flex  rounded-sm text-[#00D390]'>
-                                    <img className='w-[16px] h-[16px]' src={downloadIcon} alt="download logo" />
-                                    <h1>
+                                <div className='bg-gray-100 px-2 py-2 flex justify-between items-center rounded-lg text-[#00D390]'>
+                                        <img className='w-[16px] h-[16px]' src={downloadIcon} alt="download logo" />
+                                    <h1 className='ml-1'>
                                         {apps.downloads}
                                     </h1>
                                 </div>
-                                <div className='bg-gray-100 flex rounded-sm text-[#FF8811]'>
+                                <div className='bg-gray-100 px-2 py-2 flex justify-between items-center rounded-lg text-[#FF8811]'>
                                     <img className='w-[16px] h-[16px]' src={ratingIcon} alt="star logo" />
-                                    <h1>
+                                    <h1 className='ml-1'>
                                         {apps.ratingAvg}
                                     </h1>
                                 </div>
