@@ -1,0 +1,146 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d",
+    "title": "Focusly: Productivity Timer",
+    "companyName": "MindSpark Labs",
+    "id": 1,
+    "description": "Boost your focus using Pomodoro-style sessions with analytics and calming backgrounds.",
+    "size": "48 MB",
+    "reviews": "12.5K",
+    "ratingAvg": 4.6,
+    "downloads": "1.2M",
+    "ratings": [
+      { "name": "1 star", "count": 320 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3100 },
+      { "name": "5 star", "count": 8493 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1612831662375-295c1003d3d3",
+    "title": "SnapMix: Photo Editor",
+    "companyName": "PixelCraft Studios",
+    "id": 2,
+    "description": "A lightweight photo editor with AI filters, background remover, and instant collage maker.",
+    "size": "95 MB",
+    "reviews": "78.3K",
+    "ratingAvg": 4.3,
+    "downloads": "5.2M",
+    "ratings": [
+      { "name": "1 star", "count": 3120 },
+      { "name": "2 star", "count": 4120 },
+      { "name": "3 star", "count": 9100 },
+      { "name": "4 star", "count": 17100 },
+      { "name": "5 star", "count": 44981 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f",
+    "title": "FitTrack: Health & Steps",
+    "companyName": "ActiveNow",
+    "id": 3,
+    "description": "Track your daily steps, calories, water intake, and sleep patterns effortlessly.",
+    "size": "64 MB",
+    "reviews": "24.8K",
+    "ratingAvg": 4.7,
+    "downloads": "2.6M",
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1700 },
+      { "name": "4 star", "count": 5400 },
+      { "name": "5 star", "count": 16692 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1558655146-d09347e92766",
+    "title": "NoteFlow: Smart Notepad",
+    "companyName": "AlphaByte Tech",
+    "id": 4,
+    "description": "Organize your notes, ideas, and voice memos with cloud sync and AI suggestions.",
+    "size": "40 MB",
+    "reviews": "18.5K",
+    "ratingAvg": 4.5,
+    "downloads": "1.8M",
+    "ratings": [
+      { "name": "1 star", "count": 650 },
+      { "name": "2 star", "count": 820 },
+      { "name": "3 star", "count": 1700 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 10190 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1603979033659-e8baf0b415a4",
+    "title": "Soundify: Music Streamer",
+    "companyName": "WaveTech Media",
+    "id": 5,
+    "description": "Stream and download millions of songs ad-free with personalized playlists.",
+    "size": "128 MB",
+    "reviews": "96.5K",
+    "ratingAvg": 4.4,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 7400 },
+      { "name": "2 star", "count": 9200 },
+      { "name": "3 star", "count": 15100 },
+      { "name": "4 star", "count": 26300 },
+      { "name": "5 star", "count": 38542 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1611605698335-8b1569810432",
+    "title": "EduPath: Learn Anything",
+    "companyName": "NextGen Learning",
+    "id": 6,
+    "description": "Interactive video lessons, coding challenges, and quizzes to make learning fun.",
+    "size": "85 MB",
+    "reviews": "45.6K",
+    "ratingAvg": 4.8,
+    "downloads": "3.3M",
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 3400 },
+      { "name": "4 star", "count": 7300 },
+      { "name": "5 star", "count": 32970 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62",
+    "title": "TaskMate: To-Do & Planner",
+    "companyName": "PlanIt Labs",
+    "id": 7,
+    "description": "A simple and intuitive to-do list app with reminders, deadlines, and calendar view.",
+    "size": "52 MB",
+    "reviews": "21.1K",
+    "ratingAvg": 4.2,
+    "downloads": "1.5M",
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1300 },
+      { "name": "3 star", "count": 3100 },
+      { "name": "4 star", "count": 6500 },
+      { "name": "5 star", "count": 9354 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    "title": "DevSync: Code on the Go",
+    "companyName": "Codeverse Inc.",
+    "id": 8,
+    "description": "Write, edit, and deploy code from your phone with Git integration and syntax highlighting.",
+    "size": "110 MB",
+    "reviews": "19.2K",
+    "ratingAvg": 4.9,
+    "downloads": "0.9M",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 230 },
+      { "name": "3 star", "count": 720 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 15134 }
+    ]
+  }
+]

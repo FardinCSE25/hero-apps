@@ -11,11 +11,13 @@ const router = createBrowserRouter([
             {
                 index: true,
                 Component: Home,
+                loader: () => fetch('/TrendingApps.json'),
             },
               {
                 path: "apps",
                 Component: Apps,
             },
+
         ]
     },                           
 
