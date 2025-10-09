@@ -24,7 +24,7 @@ const Banner = () => {
                         Total Reviews
                     </p>
                     <h1 className='py-4 text-6xl'>
-                        29.6M
+                        13.57M
                     </h1>
                     <p className='text-xs font-light'>
                         21% more than last month

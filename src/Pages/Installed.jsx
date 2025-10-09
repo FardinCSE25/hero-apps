@@ -10,17 +10,18 @@ const Installed = () => {
         installedApps && setInstalled(installedApps)
     }, [])
 
-    const sortedApps = () => {
+    const sortedApps = (() => {
         if(sort == 'size-d'){
-            return [...installed].sort((a,b) => b.size - a.size)
+            return [...installed].sort((a,b) => parseFloat(b.size) - parseFloat(a.size)
+            )
         }
         else if(sort == 'size-a'){
-            return [...installed].sort((a,b) => a.size - b.size)
+            return [...installed].sort((a,b) => parseFloat(a.size) - parseFloat(b.size))
         }
         else {
             return installed
         }
-    }
+    }) ()
 
     const handleRemove = (id) => {
         const installedApps = JSON.parse(localStorage.getItem('Installed'))
@@ -43,7 +44,7 @@ const Installed = () => {
             <div className='w-11/12 mx-auto mt-10'>
                 <div className='mb-4 flex justify-between items-center'>
                     <h1 className='inter text-2xl font-semibold'>
-                        {installed.length} {(installed.length === 1) ? "App" : "Apps"} Found
+                        {installed.length} {(installed.length === 1 || installed.length === 0) ? "App" : "Apps"} Found
                     </h1>
                     <select className='border-2 border-black rounded-md p-1' value={sort} onChange={e => setSort(e.target.value)}>
                         <option value="none">Sort</option>
@@ -53,7 +54,7 @@ const Installed = () => {
                 </div>
                 <div className='bg-gray-100 grid grid-cols-1 gap-4 pb-6'>
                     {
-                        sortedApps().map(installedApps => <div className='bg-white py-2 flex items-center justify-between'>
+                        sortedApps.map(installedApps => <div className='bg-white py-2 flex items-center justify-between'>
                             <div className='pl-4'>
                                 <img className='w-[80px] h-[80px] rounded-sm' src={installedApps.image} alt="app logo" />
                             </div>

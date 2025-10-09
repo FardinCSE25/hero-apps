@@ -21,7 +21,7 @@ const Apps = () => {
                    </p>
                    <div className='pb-4 text-2xl font-semibold w-11/12 mx-auto flex justify-between items-center'>
                     <h1>
-                        ({searchedApps.length}) Apps Found
+                        ({searchedApps.length}) {(searchedApps.length === 1 || searchedApps.length === 0) ? "App" : "Apps"} Found
                     </h1>
                     <label className='input'>
           <input
@@ -34,10 +34,12 @@ const Apps = () => {
                    </div>
                    <div className='w-11/12 mx-auto grid grid-cols-4 gap-4 bg-gray-100 pb-10'>
                        {
+
                            searchedApps.map(apps => {
                                // console.log(apps);
                                
                             return (
+                                        
                                <Link to={`/app/${apps.id}`} key={apps.id} className='p-4 bg-white rounded-sm'>
                                    <img className='pb-4 h-60 w-full overflow-hidden rounded-sm' src={apps.image} alt="app logo" />
                                    <h1 className='pb-4'>

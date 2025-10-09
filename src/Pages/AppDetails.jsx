@@ -5,6 +5,7 @@ import ratingIcon from '../assets/icon-ratings.png';
 import downloadIcon from '../assets/icon-downloads.png';
 import reviewIcon from '../assets/icon-review.png'
 import AppError from '../Components/AppError';
+import { Bar, BarChart, CartesianGrid, Legend, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const AppDetails = () => {
     const [installed, setInstalled] = useState(false)
@@ -20,10 +21,10 @@ const AppDetails = () => {
         const installedApps = JSON.parse(localStorage.getItem('Installed'))
         let updatedInstalledApps = []
         if (installedApps) {
-        const duplicate = installedApps.some(apps => apps.id === app.id)
-         if(duplicate) {
-            return
-         }
+            const duplicate = installedApps.some(apps => apps.id === app.id)
+            if (duplicate) {
+                return
+            }
             updatedInstalledApps = [...installedApps, app]
         }
         else {
@@ -96,12 +97,43 @@ const AppDetails = () => {
                     <div className="mt-6 flex items-center justify-between gap-4">
                         <div>
                             <button
-                                onClick={() => {handleInstall(); setInstalled(true);}} disabled={installed} className="bg-emerald-500 cursor-pointer text-white font-semibold px-4 py-2 rounded-md flex items-center gap-3">
+                                onClick={() => { handleInstall(); setInstalled(true); }} disabled={installed} className="bg-emerald-500 cursor-pointer text-white font-semibold px-4 py-2 rounded-md flex items-center gap-3">
                                 {installed ? "Installed" : `Install Now (${app.size})`}
                             </button>
                         </div>
                     </div>
                 </div>
+
+            </div>
+            <hr className="my-6 w-11/12 mx-auto border-gray-300" />
+            <div className='w-11/12 mx-auto mt-10 mb-10'>
+                <h1 className='text-2xl font-medium mt-6'>
+                    Rating
+                </h1>
+                <div className='h-96'>
+                    <ResponsiveContainer width="100%" height="100%">
+                        <BarChart
+                            data={app.ratings}
+                            layout='vertical'
+                        >
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis type='number' />
+                            <YAxis dataKey="name" type='category' />
+                            <Tooltip />
+                            <Legend />
+                            <Bar dataKey="count" fill="#82ca9d" activeBar={<Rectangle fill="orange" stroke="yellow" />} />
+                        </BarChart>
+                    </ResponsiveContainer>
+                </div>
+            </div>
+            <hr className="pb-10 w-11/12 mx-auto border-gray-300" />
+            <div className='w-11/12 mx-auto'>
+                <h1 className='text-2xl font-medium pb-6'>
+                    Description
+                </h1>
+                <p className='pb-20 text-[#627382]'>
+                    {app.description}
+                </p>
             </div>
         </div>
     );
