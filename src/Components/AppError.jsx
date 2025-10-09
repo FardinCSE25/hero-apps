@@ -5,8 +5,7 @@ import { Link } from 'react-router';
 const AppError = () => {
     return (
         <>
-
-            <div className='bg-gray-100'>
+            <div className='bg-gradient-to-br from-gray-50 to-gray-200 '>
                 <div className='w-[750px] mx-auto pt-32 pb-48 inter'>
                     <img className='pb-6 mx-auto' src={appError} alt="error" />
                     <h1 className='text-center font-semibold text-5xl mb-5'>

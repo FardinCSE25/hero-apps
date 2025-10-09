@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import useApps from '../../useApps';
 import ratingIcon from '../assets/icon-ratings.png';
@@ -9,34 +9,44 @@ import { toast, ToastContainer } from 'react-toastify';
 
 
 const AppDetails = () => {
-    const [installed, setInstalled] = useState(false)
-    const { id } = useParams()
-    // console.log(id);
-    const { apps, loading } = useApps()
-    const app = apps.find(sApp => sApp.id == id)
+  const [installed, setInstalled] = useState(false);
+  const { id } = useParams();
+  const { apps, loading } = useApps();
+  const app = apps.find(sApp => sApp.id == id);
 
-    if (loading) {
-        return <p className='min-h-screen'>Loading....</p>
+  useEffect(() => {
+    const installedApps = JSON.parse(localStorage.getItem('Installed')) || [];
+    const convertedId = Number(id);
+    const isInstalled = installedApps.some(a => a.id === convertedId);
+    if (isInstalled) {
+      setInstalled(true); 
     }
-    const handleInstall = () => {
-        toast.success("Installed Successfully!")
+  }, [id]);
 
-        const installedApps = JSON.parse(localStorage.getItem('Installed'))
-        let updatedInstalledApps = []
-        if (installedApps) {
-            const duplicate = installedApps.some(apps => apps.id === app.id)
-            if (duplicate) {
-                return
-            }
-            updatedInstalledApps = [...installedApps, app]
-        }
-        else {
-            updatedInstalledApps.push(app)
-        }
-        localStorage.setItem('Installed', JSON.stringify(updatedInstalledApps))
+  if (loading) {
+    return <p className='min-h-screen'>Loading....</p>;
+} 
+  
+
+  const handleInstall = () => {
+    toast.success("Installed Successfully!");
+    const installedApps = JSON.parse(localStorage.getItem('Installed'));
+    let updatedInstalledApps = [];
+
+    if (installedApps) {
+      const duplicate = installedApps.some(a => a.id === app.id);
+      if (duplicate) return;
+      updatedInstalledApps = [...installedApps, app];
+    } else {
+      updatedInstalledApps.push(app);
     }
+
+    localStorage.setItem('Installed', JSON.stringify(updatedInstalledApps));
+    setInstalled(true);
+  };
 
     return (
+
         <div className=' bg-gray-100 min-h-screen inter'>
             <div className="w-11/12 mx-auto pt-20 rounded-md overflow-hidden flex">
 
