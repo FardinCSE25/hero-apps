@@ -1,3 +1,5 @@
+import { ToastContainer } from "react-toastify"
+
 function App() {
 
   return (
@@ -5,8 +7,11 @@ function App() {
       <h1 class="text-3xl font-bold underline">
     Hello world!
   </h1>
+    <ToastContainer/>
+
     </>
   )
 }
+
 
 export default App

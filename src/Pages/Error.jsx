@@ -17,7 +17,7 @@ const Error = () => {
                     The page you are looking for is not available.
                 </p>
                 <div className='w-[117px] mx-auto'>
-                    <Link to={"/"} className='text-center px-7 py-5 btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white'>
+                    <Link to={"/"} className='text-center px-6 py-5 btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white'>
                     Go Back!
                 </Link>
                 </div>

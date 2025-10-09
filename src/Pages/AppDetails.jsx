@@ -4,8 +4,9 @@ import useApps from '../../useApps';
 import ratingIcon from '../assets/icon-ratings.png';
 import downloadIcon from '../assets/icon-downloads.png';
 import reviewIcon from '../assets/icon-review.png'
-import AppError from '../Components/AppError';
 import { Bar, BarChart, CartesianGrid, Legend, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { toast, ToastContainer } from 'react-toastify';
+
 
 const AppDetails = () => {
     const [installed, setInstalled] = useState(false)
@@ -18,6 +19,8 @@ const AppDetails = () => {
         return <p className='min-h-screen'>Loading....</p>
     }
     const handleInstall = () => {
+        toast.success("Installed Successfully!")
+
         const installedApps = JSON.parse(localStorage.getItem('Installed'))
         let updatedInstalledApps = []
         if (installedApps) {
@@ -97,7 +100,10 @@ const AppDetails = () => {
                     <div className="mt-6 flex items-center justify-between gap-4">
                         <div>
                             <button
-                                onClick={() => { handleInstall(); setInstalled(true); }} disabled={installed} className="bg-emerald-500 cursor-pointer text-white font-semibold px-4 py-2 rounded-md flex items-center gap-3">
+                                onClick={() => { handleInstall(); setInstalled(true); }} disabled={installed} className={`px-4 py-2 rounded-md flex items-center gap-3 font-semibold text-white 
+                                        ${installed
+                                        ? 'bg-gray-400'
+                                        : 'bg-emerald-500 cursor-pointer'}`}>
                                 {installed ? "Installed" : `Install Now (${app.size})`}
                             </button>
                         </div>
@@ -135,8 +141,11 @@ const AppDetails = () => {
                     {app.description}
                 </p>
             </div>
+            <ToastContainer />
         </div>
+
     );
 };
+
 
 export default AppDetails;

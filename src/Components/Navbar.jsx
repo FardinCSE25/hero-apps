@@ -37,7 +37,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-2xl font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text"><img className='w-[40px] h-[40px]' src="/src/assets/logo.png" alt="webapp logo" />Hero Apps</a>
+                    <Link to={"/"} className="btn btn-ghost text-2xl font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text"><img className='w-[40px] h-[40px]' src="/src/assets/logo.png" alt="webapp logo" />Hero Apps</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-medium">

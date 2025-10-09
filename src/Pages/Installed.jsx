@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ratingIcon from '../assets/icon-ratings.png';
 import downloadIcon from '../assets/icon-downloads.png';
+import { toast, ToastContainer } from 'react-toastify';
+
+
 
 const Installed = () => {
     const [installed, setInstalled] = useState([])
@@ -24,6 +27,7 @@ const Installed = () => {
     }) ()
 
     const handleRemove = (id) => {
+                    toast.success("Uninstalled Successfully!")
         const installedApps = JSON.parse(localStorage.getItem('Installed'))
         let updatedInstalledApps = installedApps.filter(app => app.id != id)
         setInstalled(updatedInstalledApps)
@@ -89,6 +93,7 @@ const Installed = () => {
                     }
                 </div>
             </div>
+            <ToastContainer/>
         </div>
     );
 };

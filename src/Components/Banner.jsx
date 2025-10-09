@@ -1,49 +1,39 @@
 import React from 'react';
 import '../../src/App.css'
 
-const Banner = () => {
+const Hero = () => {
     return (
-        <div className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] inter'>
-            <h1 className='pt-20 text-white text-6xl font-bold text-center pb-10'>
-                Trusted by Millions, Built for You
+        <div className='bg-gray-100 inter'>
+            <h1 className='text-7xl font-extrabold text-center pt-20 pb-5 leading-20'>
+                We Build 
+                <br />
+                <span className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2]  text-transparent bg-clip-text mr-3'>
+                Productive
+                </span>
+                Apps
             </h1>
-            <div className='text-white w-1/3 mx-auto flex gap-25 pb-20'>
-                <div className='text-center'>
-                    <p className='text-xs font-light'>
-                        Total Downloads
-                    </p>
-                    <h1 className='py-4 text-6xl'>
-                        127.6M
+            <p className='font-extralight text-gray-500 w-1/2 mx-auto text-center pb-10'>
+                At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact.
+            </p>
+            <div className='flex gap-4 w-1/6 mx-auto pb-10'>
+                <a href="https://play.google.com/store/games?hl=en" target="_blank" className='flex btn btn-ghost border border-gray-300 py-7'>
+                    <img className='h-[32px] w-[32px]' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPq1phb64wZjcBqp-xZYD3am4svjU7U4p1Q&s" alt="Google Play logo" />
+                    <h1>
+                        Google Play
                     </h1>
-                    <p className='text-xs font-light'>
-                        21% more than last month
-                    </p>
-                </div>
-                <div className='text-center'>
-                    <p className='text-xs font-light'>
-                        Total Reviews
-                    </p>
-                    <h1 className='py-4 text-6xl'>
-                        13.57M
+                </a>
+                <a href="https://www.apple.com/app-store/" target="_blank" className='flex btn btn-ghost border border-gray-300 py-7'>
+                    <img className='h-[32px] w-[32px]' src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/1024px-App_Store_%28iOS%29.svg.png" alt="App Store logo" />
+                    <h1>
+                        App Store
                     </h1>
-                    <p className='text-xs font-light'>
-                        21% more than last month
-                    </p>
-                </div>
-                <div className='text-center'>
-                    <p className='text-xs font-light'>
-                        Active Apps
-                    </p>
-                    <h1 className='py-4 text-6xl'>
-                        20+
-                    </h1>
-                    <p className='text-xs font-light'>
-                        8 more will Launch
-                    </p>
-                </div>
+                </a>
+            </div>
+            <div className='w-1/2 mx-auto'>
+                <img src="/src/assets/hero.png" alt="" />
             </div>
         </div>
     );
 };
 
-export default Banner;
+export default Hero;

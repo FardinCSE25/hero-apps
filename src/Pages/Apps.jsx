@@ -9,6 +9,8 @@ const Apps = () => {
        const [search, setSearch] = useState('')
        const changedSearch = search.trim().toLocaleLowerCase()
        const searchedApps = changedSearch ? apps.filter(apps => apps.title.toLocaleLowerCase().includes(changedSearch)) : apps
+
+
     //    console.log(allApps);
        
     return (
