@@ -7,13 +7,13 @@ const Banner = () => {
             <h1 className='pt-20 text-white text-6xl font-bold text-center pb-10'>
                 Trusted by Millions, Built for You
             </h1>
-            <div className='text-white w-2/5 mx-auto flex gap-25 pb-20'>
+            <div className='text-white w-1/3 mx-auto flex gap-25 pb-20'>
                 <div className='text-center'>
                     <p className='text-xs font-light'>
                         Total Downloads
                     </p>
-                    <h1 className='py-4 text-7xl'>
-                        29.6M
+                    <h1 className='py-4 text-6xl'>
+                        127.6M
                     </h1>
                     <p className='text-xs font-light'>
                         21% more than last month
@@ -23,7 +23,7 @@ const Banner = () => {
                     <p className='text-xs font-light'>
                         Total Reviews
                     </p>
-                    <h1 className='py-4 text-7xl'>
+                    <h1 className='py-4 text-6xl'>
                         29.6M
                     </h1>
                     <p className='text-xs font-light'>
@@ -34,11 +34,11 @@ const Banner = () => {
                     <p className='text-xs font-light'>
                         Active Apps
                     </p>
-                    <h1 className='py-4 text-7xl'>
-                        132+
+                    <h1 className='py-4 text-6xl'>
+                        20+
                     </h1>
                     <p className='text-xs font-light'>
-                        31 more will Launch
+                        8 more will Launch
                     </p>
                 </div>
             </div>

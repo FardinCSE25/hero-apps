@@ -3,6 +3,7 @@ import Hero from '../Components/Hero';
 import Banner from '../Components/Banner';
 import TrendingApp from '../Components/TrendingApp';
 import useApps from '../../useApps';
+import AppError from '../Components/AppError';
 
 const Home = () => {
     // const allApps = useLoaderData()

@@ -6,11 +6,11 @@ const Navbar = () => {
     const links = <>
         <NavLink to='/'><li className="mr-12 text-lg">Home</li></NavLink>
         <NavLink to='/apps'><li className="mr-12 text-lg">Apps</li></NavLink>
-        <NavLink to='/installation'><li className="mr-12 text-lg">Installation</li></NavLink>
+        <NavLink to='/installed'><li className="mr-12 text-lg">Installed</li></NavLink>
     </>
     return (
         <div className='shadow-sm'>
-            <div className="navbar bg-base-100 w-15/16 mx-auto">
+            <div className="navbar bg-base-100 w-15/16 mx-auto inter">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -37,7 +37,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-2xl font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text"><img className='w-[40px] h-[40px]' src="/src/assets/logo.png" alt="webapp logo" />Hero.IO</a>
+                    <a className="btn btn-ghost text-2xl font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text"><img className='w-[40px] h-[40px]' src="/src/assets/logo.png" alt="webapp logo" />Hero Apps</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-medium">
