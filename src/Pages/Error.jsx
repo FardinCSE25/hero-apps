@@ -8,7 +8,7 @@ const Error = () => {
     return (
         <>
         <Navbar/>
-        <div className='w-1/4 mx-auto pt-20 text-center'>
+        <div className='w-1/4 mx-auto pt-20 pb-10 text-center'>
             <img className='pb-16' src={error} alt="error" />
             <h1 className='pb-2'>
                 Oops, page not found!

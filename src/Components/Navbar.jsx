@@ -4,9 +4,9 @@ import '../../src/App.css'
 
 const Navbar = () => {
     const links = <>
-        <NavLink to='/'><li className="mr-12">Home</li></NavLink>
-        <NavLink to='/apps'><li className="mr-12">Apps</li></NavLink>
-        <NavLink to='/installation'><li className="mr-12">Installation</li></NavLink>
+        <NavLink to='/'><li className="mr-12 text-lg">Home</li></NavLink>
+        <NavLink to='/apps'><li className="mr-12 text-lg">Apps</li></NavLink>
+        <NavLink to='/installation'><li className="mr-12 text-lg">Installation</li></NavLink>
     </>
     return (
         <div className='shadow-sm'>
@@ -37,7 +37,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2]  text-transparent bg-clip-text"><img className='w-[40px] h-[40px]' src="/src/assets/logo.png" alt="webapp logo" />Hero.IO</a>
+                    <a className="btn btn-ghost text-2xl font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text"><img className='w-[40px] h-[40px]' src="/src/assets/logo.png" alt="webapp logo" />Hero.IO</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-medium">
