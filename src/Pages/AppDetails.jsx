@@ -6,6 +6,7 @@ import downloadIcon from '../assets/icon-downloads.png';
 import reviewIcon from '../assets/icon-review.png'
 import { Bar, BarChart, CartesianGrid, Legend, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { toast, ToastContainer } from 'react-toastify';
+import Loading from '../Components/Loading';
 
 
 const AppDetails = () => {
@@ -24,7 +25,7 @@ const AppDetails = () => {
   }, [id]);
 
   if (loading) {
-    return <p className='min-h-screen'>Loading....</p>;
+    return <Loading/>
 } 
   
 

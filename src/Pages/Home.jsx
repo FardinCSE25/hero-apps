@@ -7,7 +7,7 @@ import AppError from '../Components/AppError';
 
 const Home = () => {
     // const allApps = useLoaderData()
-    const {apps} = useApps()
+    const {apps, loading} = useApps()
     // console.log(allAppsData);
     
     const trendingApps = apps.slice(0,8)
@@ -16,9 +16,9 @@ const Home = () => {
     
     return (
         <div>
-            <Hero/>
-            <Banner/>
-            <TrendingApp trendingApps={trendingApps}/>
+            {/* <Hero/>
+            <Banner/> */}
+            <TrendingApp trendingApps={trendingApps} loading={loading}/>
         </div>
     );
 };

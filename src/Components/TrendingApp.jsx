@@ -2,8 +2,9 @@ import React from 'react';
 import downloadIcon from '../assets/icon-downloads.png';
 import ratingIcon from '../assets/icon-ratings.png';
 import { Link } from 'react-router';
+import Loading from './Loading';
 
-const TrendingApp = ({trendingApps}) => {
+const TrendingApp = ({trendingApps, loading}) => {
     console.log(trendingApps);
     
     return (
@@ -18,8 +19,9 @@ const TrendingApp = ({trendingApps}) => {
             </div>
             
             <div className='w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pb-10'>
-                {
-                    trendingApps.map(apps => {
+                { 
+                   loading ? (<div className='w-[1700px] mx-auto'><Loading/></div>) : ( trendingApps.map(apps => {
+                        
                      return (
                         <Link 
                             to={`/app/${apps.id}`} 
@@ -62,9 +64,10 @@ const TrendingApp = ({trendingApps}) => {
                             </div>
                             
                             <div className='absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500'></div>
-                        </Link>
-                     );
-                    })
+                        </Link>)
+                        
+                     
+                    }))
                 }
             </div>
             

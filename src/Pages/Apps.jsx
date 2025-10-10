@@ -4,6 +4,7 @@ import ratingIcon from '../assets/icon-ratings.png';
 import useApps from '../../useApps';
 import { Link } from 'react-router';
 import AppError from '../Components/AppError';
+import Loading from '../Components/Loading';
 
 const Apps = () => {
     const { apps } = useApps()
@@ -42,7 +43,7 @@ const Apps = () => {
             <div className={`w-11/12 mx-auto grid ${searchedApps && searchedApps.length > 0 ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4' : 'grid-cols-1'} gap-6 pb-10`}>
                 {searchedApps && searchedApps.length > 0 ? (
                     searchedApps.map(apps => (
-                        <Link 
+                       <Link 
                             to={`/app/${apps.id}`} 
                             key={apps.id} 
                             className='group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2'
@@ -83,12 +84,10 @@ const Apps = () => {
                             </div>
                             
                             <div className='absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500'></div>
-                        </Link>
-                    ))
+                        </Link>)
+                    )
                 ) : (
-                    <div className='col-span-full flex justify-center'>
-                        <AppError/>
-                    </div>
+                    (<Loading/>)    
                 )}
             </div>
         </div>
