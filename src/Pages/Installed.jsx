@@ -14,25 +14,25 @@ const Installed = () => {
     }, [])
 
     const sortedApps = (() => {
-        if(sort == 'size-d'){
-            return [...installed].sort((a,b) => parseFloat(b.size) - parseFloat(a.size)
+        if (sort == 'size-d') {
+            return [...installed].sort((a, b) => parseFloat(b.size) - parseFloat(a.size)
             )
         }
-        else if(sort == 'size-a'){
-            return [...installed].sort((a,b) => parseFloat(a.size) - parseFloat(b.size))
+        else if (sort == 'size-a') {
+            return [...installed].sort((a, b) => parseFloat(a.size) - parseFloat(b.size))
         }
         else {
             return installed
         }
-    }) ()
+    })()
 
     const handleRemove = (id) => {
-                    toast.success("Uninstalled Successfully!")
+        toast.success("Uninstalled Successfully!")
         const installedApps = JSON.parse(localStorage.getItem('Installed'))
         let updatedInstalledApps = installedApps.filter(app => app.id != id)
         setInstalled(updatedInstalledApps)
         localStorage.setItem('Installed', JSON.stringify(updatedInstalledApps))
-    } 
+    }
 
 
     return (
@@ -51,9 +51,9 @@ const Installed = () => {
                         {installed.length} {(installed.length === 1 || installed.length === 0) ? "App" : "Apps"} Found
                     </h1>
                     <select className='border-2 border-black rounded-md p-1' value={sort} onChange={e => setSort(e.target.value)}>
-                        <option value="none">Sort</option>
-                      <option value="size-d">High to Low</option>
-                      <option value="size-a">Low to High</option>
+                        <option value="none">Default</option>
+                        <option value="size-d">High to Low</option>
+                        <option value="size-a">Low to High</option>
                     </select>
                 </div>
                 <div className='bg-gray-100 grid grid-cols-1 gap-4 pb-6'>
@@ -93,7 +93,7 @@ const Installed = () => {
                     }
                 </div>
             </div>
-            <ToastContainer/>
+            <ToastContainer />
         </div>
     );
 };

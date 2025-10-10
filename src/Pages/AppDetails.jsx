@@ -10,41 +10,41 @@ import Loading from '../Components/Loading';
 
 
 const AppDetails = () => {
-  const [installed, setInstalled] = useState(false);
-  const { id } = useParams();
-  const { apps, loading } = useApps();
-  const app = apps.find(sApp => sApp.id == id);
+    const [installed, setInstalled] = useState(false);
+    const { id } = useParams();
+    const { apps, loading } = useApps();
+    const app = apps.find(sApp => sApp.id == id);
 
-  useEffect(() => {
-    const installedApps = JSON.parse(localStorage.getItem('Installed')) || [];
-    const convertedId = Number(id);
-    const isInstalled = installedApps.some(a => a.id === convertedId);
-    if (isInstalled) {
-      setInstalled(true); 
-    }
-  }, [id]);
+    useEffect(() => {
+        const installedApps = JSON.parse(localStorage.getItem('Installed')) || [];
+        const convertedId = Number(id);
+        const isInstalled = installedApps.some(a => a.id === convertedId);
+        if (isInstalled) {
+            setInstalled(true);
+        }
+    }, [id]);
 
-  if (loading) {
-    return <Loading/>
-} 
-  
-
-  const handleInstall = () => {
-    toast.success("Installed Successfully!");
-    const installedApps = JSON.parse(localStorage.getItem('Installed'));
-    let updatedInstalledApps = [];
-
-    if (installedApps) {
-      const duplicate = installedApps.some(a => a.id === app.id);
-      if (duplicate) return;
-      updatedInstalledApps = [...installedApps, app];
-    } else {
-      updatedInstalledApps.push(app);
+    if (loading) {
+        return <Loading />
     }
 
-    localStorage.setItem('Installed', JSON.stringify(updatedInstalledApps));
-    setInstalled(true);
-  };
+
+    const handleInstall = () => {
+        toast.success("Installed Successfully!");
+        const installedApps = JSON.parse(localStorage.getItem('Installed'));
+        let updatedInstalledApps = [];
+
+        if (installedApps) {
+            const duplicate = installedApps.some(a => a.id === app.id);
+            if (duplicate) return;
+            updatedInstalledApps = [...installedApps, app];
+        } else {
+            updatedInstalledApps.push(app);
+        }
+
+        localStorage.setItem('Installed', JSON.stringify(updatedInstalledApps));
+        setInstalled(true);
+    };
 
     return (
 

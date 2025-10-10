@@ -4,10 +4,10 @@ import '../../src/App.css'
 const Banner = () => {
     return (
         <div className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] inter'>
-            <h1 className='pt-20 text-white text-6xl font-bold text-center pb-10'>
+            <h1 className='w-[1000px] mx-auto pt-20 text-white text-6xl font-bold text-center pb-10'>
                 Trusted by Millions, Built for You
             </h1>
-            <div className='text-white w-1/3 mx-auto flex gap-25 pb-20'>
+            <div className=' text-white w-[750px] mx-auto flex gap-25 pb-20'>
                 <div className='text-center'>
                     <p className='text-xs font-light'>
                         Total Downloads
@@ -19,7 +19,7 @@ const Banner = () => {
                         21% more than last month
                     </p>
                 </div>
-                <div className='text-center'>
+                <div className='text-center mr-3'>
                     <p className='text-xs font-light'>
                         Total Reviews
                     </p>

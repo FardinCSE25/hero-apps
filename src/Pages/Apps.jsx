@@ -3,7 +3,6 @@ import downloadIcon from '../assets/icon-downloads.png';
 import ratingIcon from '../assets/icon-ratings.png';
 import useApps from '../../useApps';
 import { Link } from 'react-router';
-import AppError from '../Components/AppError';
 import Loading from '../Components/Loading';
 
 const Apps = () => {
@@ -23,7 +22,7 @@ const Apps = () => {
                     Explore All Apps on the Market developed by us. We code for Millions
                 </p>
             </div>
-            
+
             <div className='pb-8 text-2xl font-semibold w-11/12 mx-auto flex justify-between items-center'>
                 <h1 className='text-gray-800'>
                     ({searchedApps.length}) {(searchedApps.length === 1 || searchedApps.length === 0) ? "App" : "Apps"} Found
@@ -43,13 +42,13 @@ const Apps = () => {
             <div className={`w-11/12 mx-auto grid ${searchedApps && searchedApps.length > 0 ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4' : 'grid-cols-1'} gap-6 pb-10`}>
                 {searchedApps && searchedApps.length > 0 ? (
                     searchedApps.map(apps => (
-                       <Link 
-                            to={`/app/${apps.id}`} 
-                            key={apps.id} 
+                        <Link
+                            to={`/app/${apps.id}`}
+                            key={apps.id}
                             className='group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2'
                         >
                             <div className='absolute inset-0 bg-gradient-to-br from-purple-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0'></div>
-                            
+
                             <div className='relative z-10 p-6'>
                                 <div className='relative overflow-hidden rounded-xl mb-6'>
                                     <div className='absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10'></div>
@@ -62,11 +61,11 @@ const Apps = () => {
                                         <span className='text-sm font-semibold text-gray-800'>View App</span>
                                     </div>
                                 </div>
-                                
+
                                 <h1 className='text-xl font-bold text-gray-800 mb-4 group-hover:text-purple-600 transition-colors duration-300'>
                                     {apps.title}
                                 </h1>
-                                
+
                                 <div className='flex justify-between items-center'>
                                     <div className='flex items-center bg-gray-100 px-4 py-2 rounded-xl group-hover:bg-purple-50 transition-colors duration-300'>
                                         <img className='w-5 h-5 transform group-hover:scale-110 transition-transform duration-300' src={downloadIcon} alt="download logo" />
@@ -82,12 +81,12 @@ const Apps = () => {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div className='absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500'></div>
                         </Link>)
                     )
                 ) : (
-                    (<Loading/>)    
+                    (<Loading />)
                 )}
             </div>
         </div>

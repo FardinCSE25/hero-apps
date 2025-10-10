@@ -11,29 +11,29 @@ const router = createBrowserRouter([
     {
         path: "/",
         Component: Layout,
-        errorElement: <Error/>,
+        errorElement: <Error />,
         children: [
             {
                 index: true,
                 Component: Home,
                 loader: () => fetch('/AllApps.json'),
             },
-              {
+            {
                 path: "/apps",
                 Component: Apps,
                 loader: () => fetch('/AllApps.json')
             },
             {
                 path: "/app/:id",
-                Component : AppDetails,
-                errorElement : <AppError/>
+                Component: AppDetails,
+                errorElement: <AppError />
             },
             {
                 path: "/installed",
                 Component: Installed
             }
         ]
-    }                         
+    }
 
 ]);
 
