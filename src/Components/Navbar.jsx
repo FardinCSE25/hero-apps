@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router';
 import '../../src/App.css'
+import logo from '../assets/logo.png'
+import gitLogo from '../assets/GitHub-Symbol.png'
 
 const Navbar = () => {
     const links = <>
@@ -37,7 +39,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <Link to={"/"} className="btn btn-ghost text-2xl font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text"><img className='w-[40px] h-[40px]' src="/src/assets/logo.png" alt="webapp logo" />Hero Apps</Link>
+                    <Link to={"/"} className="btn btn-ghost text-2xl font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text"><img className='w-[40px] h-[40px]' src={logo} alt="webapp logo" />Hero Apps</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-medium">
@@ -45,7 +47,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a href="https://github.com/FardinCSE25" target="_blank" className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white"><img className='w-[20px] h-[20px]' src="https://images.seeklogo.com/logo-png/30/2/github-logo-png_seeklogo-304612.png" alt="github logo" /> Contribute</a>
+                    <a href="https://github.com/FardinCSE25" target="_blank" className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white"><img className='w-[20px] h-[20px]' src={gitLogo} alt="github logo" /> Contribute</a>
                 </div>
             </div>
         </div>
