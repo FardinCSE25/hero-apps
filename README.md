@@ -1,17 +1,48 @@
-# React + Vite
+# 📱 Productive Apps – App Store Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, modern, and fully responsive App Store–style website designed using **HTML**, **Tailwind CSS**, and **JavaScript**.  
+The website includes Home, Apps Listing, App Details, Installation Page, and custom Error Pages.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Project Overview
+This project is a professional **App Store UI** where users can browse apps, view ratings, see details, install apps, and check installation status.  
+The website contains multiple dynamic pages such as:
 
-## React Compiler
+- 🏠 Home Page  
+- 📦 All Apps Page  
+- 📲 Installed Apps Page  
+- 📄 App Details Page  
+- ⚠️ 404 Page  
+- ❌ App Not Found Page  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The main goal of this project is to practice real-world UI development, responsive layout design, and JavaScript-based dynamic interactivity with Tailwind CSS.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# hero-apps
+## 🛠️ Technologies Used
+- **HTML5** – Page structure  
+- **Tailwind CSS** – Styling, layout & responsiveness  
+- **JavaScript (ES6)** – Logic, interactivity, dynamic content  
+
+---
+
+## ⭐ Main Features
+- Fully dynamic App Store UI  
+- Trending apps section  
+- All apps listing page  
+- Single app details page with ratings  
+- Graph-based rating visualization  
+- Install–Uninstall functionality  
+- Installed apps management page  
+- Custom 404 and App-Not-Found pages  
+- Mobile-first, responsive layout  
+- Modern and clean user-friendly interface  
+
+---
+
+## 📦 Dependencies
+This project uses **Tailwind CSS CDN**:
+
+```html
+<script src="https://cdn.tailwindcss.com"></script>
