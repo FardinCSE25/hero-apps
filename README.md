@@ -46,3 +46,17 @@ This project uses **Tailwind CSS CDN**:
 
 ```html
 <script src="https://cdn.tailwindcss.com"></script>
+```
+
+## ▶️ How to Run the Project Locally
+1. Clone the Repository
+git clone https://github.com/your-username/flower-website.git
+
+2. Open the Project Folder
+cd flower-website
+
+3. Run the Project
+
+## 🔗 Live Demo
+
+👉 Live Website: [Hero Apps](https://hero-apps-fardin.netlify.app/).
