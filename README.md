@@ -60,3 +60,8 @@ cd flower-website
 ## 🔗 Live Demo
 
 👉 Live Website: [Hero Apps](https://hero-apps-fardin.netlify.app/).
+---
+
+## Developer
+
+**Developed by:** Fardin Ahmed
